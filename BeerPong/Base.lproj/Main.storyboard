@@ -1,26 +1,187 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c5M-ZD-n2S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Matches View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MatchesViewController" customModule="BeerPong" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MatchesMasterView" customModule="BeerPong" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred_beer" translatesAutoresizingMaskIntoConstraints="NO" id="Tx4-dH-Mjd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-DW-RBo" customClass="MatchesTableView" customModule="BeerPong" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchCell" id="Ge6-u5-gSi" customClass="MatchCell" customModule="BeerPong" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ge6-u5-gSi" id="YOq-ou-Nkx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lU-K0-CK7">
+                                                    <rect key="frame" x="8" y="3" width="359" height="57"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZw-Kj-x5d">
+                                                            <rect key="frame" x="61" y="18" width="87" height="21"/>
+                                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                                            <color key="textColor" red="0.85098039215686272" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-W4-EBI">
+                                                            <rect key="frame" x="212" y="18" width="86" height="21"/>
+                                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                                            <color key="textColor" red="0.85098039219999999" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-a0-LmC">
+                                                            <rect key="frame" x="150" y="18" width="60" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="11r-Jh-PnZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                                            <color key="textColor" red="0.85098039219999999" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPx-h6-QvN" customClass="ProfileImageView" customModule="BeerPong" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="6" width="45" height="45"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="iPx-h6-QvN" secondAttribute="height" multiplier="1:1" id="sG4-5Z-0ao"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="team_placeholder"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hasBadge" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.14117647059999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOk-2r-r7s" customClass="ProfileImageView" customModule="BeerPong" customModuleProvider="target">
+                                                            <rect key="frame" x="306" y="6" width="45" height="45"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="bOk-2r-r7s" secondAttribute="height" multiplier="1:1" id="XuW-wb-hTk"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="team_placeholder"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hasBadge" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.14117647059999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bOk-2r-r7s" firstAttribute="leading" secondItem="A0g-W4-EBI" secondAttribute="trailing" constant="8" id="1YD-Ql-kUf"/>
+                                                        <constraint firstItem="iPx-h6-QvN" firstAttribute="centerY" secondItem="1lU-K0-CK7" secondAttribute="centerY" id="5Gz-Ut-1Kw"/>
+                                                        <constraint firstItem="bZw-Kj-x5d" firstAttribute="leading" secondItem="iPx-h6-QvN" secondAttribute="trailing" constant="8" id="5zE-Pn-ccA"/>
+                                                        <constraint firstItem="Tbc-a0-LmC" firstAttribute="centerY" secondItem="1lU-K0-CK7" secondAttribute="centerY" id="9xb-2e-XDy"/>
+                                                        <constraint firstItem="iPx-h6-QvN" firstAttribute="height" secondItem="1lU-K0-CK7" secondAttribute="height" multiplier="0.8" id="Hca-pc-G82"/>
+                                                        <constraint firstItem="A0g-W4-EBI" firstAttribute="leading" secondItem="Tbc-a0-LmC" secondAttribute="trailing" constant="2" id="NLN-zX-j1b"/>
+                                                        <constraint firstItem="bZw-Kj-x5d" firstAttribute="centerY" secondItem="1lU-K0-CK7" secondAttribute="centerY" id="OBM-10-NNA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bOk-2r-r7s" secondAttribute="trailing" constant="8" id="OVL-GH-yef"/>
+                                                        <constraint firstItem="bOk-2r-r7s" firstAttribute="centerY" secondItem="1lU-K0-CK7" secondAttribute="centerY" id="VJl-1n-NlQ"/>
+                                                        <constraint firstItem="bOk-2r-r7s" firstAttribute="height" secondItem="iPx-h6-QvN" secondAttribute="height" id="YXp-6V-fMv"/>
+                                                        <constraint firstItem="Tbc-a0-LmC" firstAttribute="centerX" secondItem="1lU-K0-CK7" secondAttribute="centerX" id="eAP-Uy-4ua"/>
+                                                        <constraint firstItem="Tbc-a0-LmC" firstAttribute="leading" secondItem="bZw-Kj-x5d" secondAttribute="trailing" constant="2" id="g3K-fT-uGJ"/>
+                                                        <constraint firstItem="A0g-W4-EBI" firstAttribute="centerY" secondItem="1lU-K0-CK7" secondAttribute="centerY" id="pgs-wt-vVv"/>
+                                                        <constraint firstItem="iPx-h6-QvN" firstAttribute="leading" secondItem="1lU-K0-CK7" secondAttribute="leading" constant="8" id="u7e-v8-eSp"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="1lU-K0-CK7" firstAttribute="leading" secondItem="YOq-ou-Nkx" secondAttribute="leading" constant="8" id="DCS-Jv-zVC"/>
+                                                <constraint firstAttribute="trailing" secondItem="1lU-K0-CK7" secondAttribute="trailing" constant="8" id="NUX-C2-PGM"/>
+                                                <constraint firstItem="1lU-K0-CK7" firstAttribute="top" secondItem="YOq-ou-Nkx" secondAttribute="top" constant="3" id="bY7-Io-ASM"/>
+                                                <constraint firstAttribute="bottom" secondItem="1lU-K0-CK7" secondAttribute="bottom" id="zIW-up-cul"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="firstTeamNameLabel" destination="bZw-Kj-x5d" id="bdU-am-JhD"/>
+                                            <outlet property="firstTeamProfileImageView" destination="iPx-h6-QvN" id="Mlc-Az-SH0"/>
+                                            <outlet property="matchResultLabel" destination="Tbc-a0-LmC" id="8Va-GY-hKj"/>
+                                            <outlet property="secondTeamNameLabel" destination="A0g-W4-EBI" id="PlE-PG-uig"/>
+                                            <outlet property="secondTeamProfileImageView" destination="bOk-2r-r7s" id="Zt6-Rq-Iwl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tx4-dH-Mjd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="8gQ-Ox-GTn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Xo-DW-RBo" secondAttribute="bottom" id="Bzr-wj-NBR"/>
+                            <constraint firstAttribute="trailing" secondItem="9Xo-DW-RBo" secondAttribute="trailing" id="GLQ-J5-Bhd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tx4-dH-Mjd" secondAttribute="bottom" id="Vo1-wL-khj"/>
+                            <constraint firstItem="9Xo-DW-RBo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e3K-6v-6Bm"/>
+                            <constraint firstItem="9Xo-DW-RBo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="jcL-6a-JVJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Tx4-dH-Mjd" secondAttribute="trailing" id="rKF-iL-AWz"/>
+                            <constraint firstItem="Tx4-dH-Mjd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tOh-eN-e1r"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="tableView" destination="9Xo-DW-RBo" id="yyX-2z-rMG"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="o8W-aq-jeD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="183" y="-646"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W5H-6K-rN4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c5M-ZD-n2S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IOW-ac-Fbn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lR6-qH-8qm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wqc-yl-INe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575.20000000000005" y="-646.32683658170924"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blurred_beer" width="1024" height="768"/>
+    </resources>
 </document>
