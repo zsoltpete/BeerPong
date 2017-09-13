@@ -1,0 +1,6 @@
+framework module Pods_BeerPong {
+  umbrella header "Pods-BeerPong-umbrella.h"
+
+  export *
+  module * { export * }
+}
