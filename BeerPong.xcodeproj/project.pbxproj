@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD678EF73234D45F26DF38B /* Pods_BeerPong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FCEB5D7EDC46036073E3E2 /* Pods_BeerPong.framework */; };
+		3713B2972AC8CC200F9B092B /* Pods_BeerPongTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F987AF87AD15DD76B41E5E /* Pods_BeerPongTests.framework */; };
+		50374EDA1F69BA0400F2DC3B /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50374ED91F69BA0400F2DC3B /* UIView+Shadow.swift */; };
+		50374EDC1F69BE7E00F2DC3B /* Array+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50374EDB1F69BE7E00F2DC3B /* Array+Sample.swift */; };
+		50374EDE1F69C5E900F2DC3B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50374EDD1F69C5E900F2DC3B /* Team.swift */; };
+		50374EE11F69C86200F2DC3B /* ProfileImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50374EE01F69C86200F2DC3B /* ProfileImageView.xib */; };
+		50374EE31F69C8F300F2DC3B /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50374EE21F69C8F300F2DC3B /* ProfileImageView.swift */; };
 		503D05861F69A8A6004E3E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05851F69A8A6004E3E3C /* AppDelegate.swift */; };
-		503D05881F69A8A6004E3E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05871F69A8A6004E3E3C /* ViewController.swift */; };
 		503D058B1F69A8A6004E3E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503D05891F69A8A6004E3E3C /* Main.storyboard */; };
 		503D058D1F69A8A6004E3E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503D058C1F69A8A6004E3E3C /* Assets.xcassets */; };
 		503D05901F69A8A6004E3E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503D058E1F69A8A6004E3E3C /* LaunchScreen.storyboard */; };
 		503D059B1F69A8A6004E3E3C /* BeerPongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D059A1F69A8A6004E3E3C /* BeerPongTests.swift */; };
 		503D05A61F69A8A6004E3E3C /* BeerPongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05A51F69A8A6004E3E3C /* BeerPongUITests.swift */; };
+		503D05B51F69AEF5004E3E3C /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05B41F69AEF5004E3E3C /* MatchesViewController.swift */; };
+		503D05B71F69AF09004E3E3C /* MatchesMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05B61F69AF09004E3E3C /* MatchesMasterView.swift */; };
+		503D05B91F69AF25004E3E3C /* MatchesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05B81F69AF25004E3E3C /* MatchesTableView.swift */; };
+		503D05BB1F69AF40004E3E3C /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05BA1F69AF40004E3E3C /* MatchCell.swift */; };
+		503D05BD1F69AF53004E3E3C /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05BC1F69AF53004E3E3C /* MatchViewModel.swift */; };
+		503D05C21F69B03B004E3E3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C11F69B03B004E3E3C /* Constants.swift */; };
+		503D05C41F69B075004E3E3C /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C31F69B075004E3E3C /* Match.swift */; };
+		503D05C81F69B0DA004E3E3C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C71F69B0DA004E3E3C /* Player.swift */; };
+		503D05CA1F69B172004E3E3C /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C91F69B172004E3E3C /* MatchResult.swift */; };
+		503D05CD1F69B3C6004E3E3C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05CC1F69B3C6004E3E3C /* Theme.swift */; };
+		8AC78BD08567E01759CF24EC /* Pods_BeerPongUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C3A43AB914B18C3F008ADD7 /* Pods-BeerPongUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests.release.xcconfig"; sourceTree = "<group>"; };
+		27A1FAA9306F8FA3896D9590 /* Pods-BeerPong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPong.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong.release.xcconfig"; sourceTree = "<group>"; };
+		50374ED91F69BA0400F2DC3B /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		50374EDB1F69BE7E00F2DC3B /* Array+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Sample.swift"; sourceTree = "<group>"; };
+		50374EDD1F69C5E900F2DC3B /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		50374EE01F69C86200F2DC3B /* ProfileImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileImageView.xib; sourceTree = "<group>"; };
+		50374EE21F69C8F300F2DC3B /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		503D05821F69A8A6004E3E3C /* BeerPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D05851F69A8A6004E3E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		503D05871F69A8A6004E3E3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		503D058A1F69A8A6004E3E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		503D058C1F69A8A6004E3E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503D058F1F69A8A6004E3E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +70,23 @@
 		503D05A11F69A8A6004E3E3C /* BeerPongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerPongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503D05A51F69A8A6004E3E3C /* BeerPongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPongUITests.swift; sourceTree = "<group>"; };
 		503D05A71F69A8A6004E3E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503D05B41F69AEF5004E3E3C /* MatchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		503D05B61F69AF09004E3E3C /* MatchesMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesMasterView.swift; sourceTree = "<group>"; };
+		503D05B81F69AF25004E3E3C /* MatchesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesTableView.swift; sourceTree = "<group>"; };
+		503D05BA1F69AF40004E3E3C /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		503D05BC1F69AF53004E3E3C /* MatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		503D05C11F69B03B004E3E3C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		503D05C31F69B075004E3E3C /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		503D05C71F69B0DA004E3E3C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		503D05C91F69B172004E3E3C /* MatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
+		503D05CC1F69B3C6004E3E3C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerPongUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E48140438D4F426DF57B705 /* Pods-BeerPong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong.debug.xcconfig"; sourceTree = "<group>"; };
+		B298BF68E1BAF506D8848FEC /* Pods-BeerPongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2FCEB5D7EDC46036073E3E2 /* Pods_BeerPong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerPong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F987AF87AD15DD76B41E5E /* Pods_BeerPongTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerPongTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24DA49E159A92281D768BCC /* Pods-BeerPongTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongTests/Pods-BeerPongTests.release.xcconfig"; sourceTree = "<group>"; };
+		E59F53A99FDAFDD62CC67D0A /* Pods-BeerPongTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongTests/Pods-BeerPongTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD678EF73234D45F26DF38B /* Pods_BeerPong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3713B2972AC8CC200F9B092B /* Pods_BeerPongTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +110,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC78BD08567E01759CF24EC /* Pods_BeerPongUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50374ED81F69B9DD00F2DC3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50374ED91F69BA0400F2DC3B /* UIView+Shadow.swift */,
+				50374EDB1F69BE7E00F2DC3B /* Array+Sample.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50374EDF1F69C76800F2DC3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50374EE01F69C86200F2DC3B /* ProfileImageView.xib */,
+				50374EE21F69C8F300F2DC3B /* ProfileImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		503D05791F69A8A6004E3E3C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +142,8 @@
 				503D05991F69A8A6004E3E3C /* BeerPongTests */,
 				503D05A41F69A8A6004E3E3C /* BeerPongUITests */,
 				503D05831F69A8A6004E3E3C /* Products */,
+				8E36B19FDE356AB1DBECC126 /* Pods */,
+				F181E5C5ED8FA6E20BB79FA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +160,10 @@
 		503D05841F69A8A6004E3E3C /* BeerPong */ = {
 			isa = PBXGroup;
 			children = (
+				503D05B31F69ADA1004E3E3C /* Matches */,
+				503D05BF1F69AFED004E3E3C /* Utilities */,
+				503D05C51F69B0B3004E3E3C /* Shared */,
 				503D05851F69A8A6004E3E3C /* AppDelegate.swift */,
-				503D05871F69A8A6004E3E3C /* ViewController.swift */,
 				503D05891F69A8A6004E3E3C /* Main.storyboard */,
 				503D058C1F69A8A6004E3E3C /* Assets.xcassets */,
 				503D058E1F69A8A6004E3E3C /* LaunchScreen.storyboard */,
@@ -125,6 +190,87 @@
 			path = BeerPongUITests;
 			sourceTree = "<group>";
 		};
+		503D05B31F69ADA1004E3E3C /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				503D05B41F69AEF5004E3E3C /* MatchesViewController.swift */,
+				503D05B61F69AF09004E3E3C /* MatchesMasterView.swift */,
+				503D05B81F69AF25004E3E3C /* MatchesTableView.swift */,
+				503D05BA1F69AF40004E3E3C /* MatchCell.swift */,
+				503D05BC1F69AF53004E3E3C /* MatchViewModel.swift */,
+				503D05C31F69B075004E3E3C /* Match.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		503D05BF1F69AFED004E3E3C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				50374ED81F69B9DD00F2DC3B /* Extensions */,
+				503D05CB1F69B3AA004E3E3C /* Theme */,
+				503D05C01F69B001004E3E3C /* Constants */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		503D05C01F69B001004E3E3C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				503D05C11F69B03B004E3E3C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		503D05C51F69B0B3004E3E3C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				50374EDF1F69C76800F2DC3B /* Views */,
+				503D05C61F69B0BB004E3E3C /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		503D05C61F69B0BB004E3E3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				503D05C71F69B0DA004E3E3C /* Player.swift */,
+				503D05C91F69B172004E3E3C /* MatchResult.swift */,
+				50374EDD1F69C5E900F2DC3B /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		503D05CB1F69B3AA004E3E3C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				503D05CC1F69B3C6004E3E3C /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8E36B19FDE356AB1DBECC126 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E48140438D4F426DF57B705 /* Pods-BeerPong.debug.xcconfig */,
+				27A1FAA9306F8FA3896D9590 /* Pods-BeerPong.release.xcconfig */,
+				E59F53A99FDAFDD62CC67D0A /* Pods-BeerPongTests.debug.xcconfig */,
+				E24DA49E159A92281D768BCC /* Pods-BeerPongTests.release.xcconfig */,
+				B298BF68E1BAF506D8848FEC /* Pods-BeerPongUITests.debug.xcconfig */,
+				1C3A43AB914B18C3F008ADD7 /* Pods-BeerPongUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F181E5C5ED8FA6E20BB79FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2FCEB5D7EDC46036073E3E2 /* Pods_BeerPong.framework */,
+				C7F987AF87AD15DD76B41E5E /* Pods_BeerPongTests.framework */,
+				5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 503D05AA1F69A8A6004E3E3C /* Build configuration list for PBXNativeTarget "BeerPong" */;
 			buildPhases = (
+				1D814DADA96FAD16A0242382 /* [CP] Check Pods Manifest.lock */,
 				503D057E1F69A8A6004E3E3C /* Sources */,
 				503D057F1F69A8A6004E3E3C /* Frameworks */,
 				503D05801F69A8A6004E3E3C /* Resources */,
+				11A4543BF9619350CD1388FA /* [CP] Embed Pods Frameworks */,
+				2DAEAACF34A009F5A46C29F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 503D05AD1F69A8A6004E3E3C /* Build configuration list for PBXNativeTarget "BeerPongTests" */;
 			buildPhases = (
+				84E4927A7665C886B503E712 /* [CP] Check Pods Manifest.lock */,
 				503D05921F69A8A6004E3E3C /* Sources */,
 				503D05931F69A8A6004E3E3C /* Frameworks */,
 				503D05941F69A8A6004E3E3C /* Resources */,
+				777CD14BBA5030FE3CA6F292 /* [CP] Embed Pods Frameworks */,
+				82309F6EEDEC480E04554F41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 503D05B01F69A8A6004E3E3C /* Build configuration list for PBXNativeTarget "BeerPongUITests" */;
 			buildPhases = (
+				6C9F3977E18A1EEE8411B80D /* [CP] Check Pods Manifest.lock */,
 				503D059D1F69A8A6004E3E3C /* Sources */,
 				503D059E1F69A8A6004E3E3C /* Frameworks */,
 				503D059F1F69A8A6004E3E3C /* Resources */,
+				79C281630CC0860FDE56FC3A /* [CP] Embed Pods Frameworks */,
+				C73DAEA36C88C2CEF35B5292 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50374EE11F69C86200F2DC3B /* ProfileImageView.xib in Resources */,
 				503D05901F69A8A6004E3E3C /* LaunchScreen.storyboard in Resources */,
 				503D058D1F69A8A6004E3E3C /* Assets.xcassets in Resources */,
 				503D058B1F69A8A6004E3E3C /* Main.storyboard in Resources */,
@@ -257,12 +413,189 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11A4543BF9619350CD1388FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D814DADA96FAD16A0242382 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerPong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DAEAACF34A009F5A46C29F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C9F3977E18A1EEE8411B80D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerPongUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777CD14BBA5030FE3CA6F292 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPongTests/Pods-BeerPongTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79C281630CC0860FDE56FC3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82309F6EEDEC480E04554F41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPongTests/Pods-BeerPongTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E4927A7665C886B503E712 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerPongTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73DAEA36C88C2CEF35B5292 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		503D057E1F69A8A6004E3E3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				503D05881F69A8A6004E3E3C /* ViewController.swift in Sources */,
+				503D05B51F69AEF5004E3E3C /* MatchesViewController.swift in Sources */,
+				503D05B91F69AF25004E3E3C /* MatchesTableView.swift in Sources */,
+				50374EDE1F69C5E900F2DC3B /* Team.swift in Sources */,
+				503D05BD1F69AF53004E3E3C /* MatchViewModel.swift in Sources */,
+				503D05C41F69B075004E3E3C /* Match.swift in Sources */,
+				50374EDA1F69BA0400F2DC3B /* UIView+Shadow.swift in Sources */,
+				503D05CD1F69B3C6004E3E3C /* Theme.swift in Sources */,
+				503D05CA1F69B172004E3E3C /* MatchResult.swift in Sources */,
+				50374EDC1F69BE7E00F2DC3B /* Array+Sample.swift in Sources */,
+				503D05BB1F69AF40004E3E3C /* MatchCell.swift in Sources */,
+				503D05C21F69B03B004E3E3C /* Constants.swift in Sources */,
+				503D05B71F69AF09004E3E3C /* MatchesMasterView.swift in Sources */,
+				50374EE31F69C8F300F2DC3B /* ProfileImageView.swift in Sources */,
+				503D05C81F69B0DA004E3E3C /* Player.swift in Sources */,
 				503D05861F69A8A6004E3E3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +748,7 @@
 		};
 		503D05AB1F69A8A6004E3E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E48140438D4F426DF57B705 /* Pods-BeerPong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MSLJP987H9;
@@ -428,6 +762,7 @@
 		};
 		503D05AC1F69A8A6004E3E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A1FAA9306F8FA3896D9590 /* Pods-BeerPong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MSLJP987H9;
@@ -441,6 +776,7 @@
 		};
 		503D05AE1F69A8A6004E3E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59F53A99FDAFDD62CC67D0A /* Pods-BeerPongTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +792,7 @@
 		};
 		503D05AF1F69A8A6004E3E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24DA49E159A92281D768BCC /* Pods-BeerPongTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +808,7 @@
 		};
 		503D05B11F69A8A6004E3E3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B298BF68E1BAF506D8848FEC /* Pods-BeerPongUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MSLJP987H9;
@@ -485,6 +823,7 @@
 		};
 		503D05B21F69A8A6004E3E3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3A43AB914B18C3F008ADD7 /* Pods-BeerPongUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MSLJP987H9;
@@ -516,6 +855,7 @@
 				503D05AC1F69A8A6004E3E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503D05AD1F69A8A6004E3E3C /* Build configuration list for PBXNativeTarget "BeerPongTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +864,7 @@
 				503D05AF1F69A8A6004E3E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503D05B01F69A8A6004E3E3C /* Build configuration list for PBXNativeTarget "BeerPongUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +873,7 @@
 				503D05B21F69A8A6004E3E3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
