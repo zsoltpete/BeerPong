@@ -1,16 +1,83 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileImageView" customModule="BeerPong" customModuleProvider="target">
+            <connections>
+                <outlet property="badgeImageView" destination="z2h-HO-vkZ" id="IKJ-3p-drN"/>
+                <outlet property="containerView" destination="Jtn-OW-2ch" id="qZt-r0-CYl"/>
+                <outlet property="imageView" destination="7JB-1K-iwF" id="mED-Qq-5g3"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jtn-OW-2ch">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="team_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7JB-1K-iwF">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7JB-1K-iwF" secondAttribute="height" multiplier="1:1" id="oWu-O1-Hem"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-Tt-cuT">
+                            <rect key="frame" x="192" y="0.0" width="8" height="200"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSN-zL-h9P">
+                            <rect key="frame" x="0.0" y="192" width="200" height="8"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z2h-HO-vkZ">
+                            <rect key="frame" x="160" y="160" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="z2h-HO-vkZ" secondAttribute="height" multiplier="1:1" id="Z53-r1-VmG"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="HSN-zL-h9P" firstAttribute="centerX" secondItem="Jtn-OW-2ch" secondAttribute="centerX" id="0fw-ym-xlY"/>
+                        <constraint firstItem="z2h-HO-vkZ" firstAttribute="height" secondItem="Jtn-OW-2ch" secondAttribute="height" multiplier="0.2" id="1U7-s4-ctu"/>
+                        <constraint firstItem="IPW-Tt-cuT" firstAttribute="centerY" secondItem="Jtn-OW-2ch" secondAttribute="centerY" id="Eyw-dL-fuE"/>
+                        <constraint firstAttribute="bottom" secondItem="HSN-zL-h9P" secondAttribute="bottom" id="K23-Wp-bdl"/>
+                        <constraint firstItem="IPW-Tt-cuT" firstAttribute="height" secondItem="Jtn-OW-2ch" secondAttribute="height" id="MJD-sk-z7V"/>
+                        <constraint firstItem="7JB-1K-iwF" firstAttribute="height" secondItem="Jtn-OW-2ch" secondAttribute="height" id="PCN-Et-XEa"/>
+                        <constraint firstItem="z2h-HO-vkZ" firstAttribute="trailing" secondItem="IPW-Tt-cuT" secondAttribute="trailing" id="SuT-nZ-Rvb"/>
+                        <constraint firstItem="HSN-zL-h9P" firstAttribute="width" secondItem="Jtn-OW-2ch" secondAttribute="width" id="djX-qH-AmQ"/>
+                        <constraint firstItem="7JB-1K-iwF" firstAttribute="centerY" secondItem="Jtn-OW-2ch" secondAttribute="centerY" id="ffg-Wg-Gb9"/>
+                        <constraint firstAttribute="trailing" secondItem="IPW-Tt-cuT" secondAttribute="trailing" id="jpe-L2-T1i"/>
+                        <constraint firstItem="z2h-HO-vkZ" firstAttribute="bottom" secondItem="HSN-zL-h9P" secondAttribute="bottom" id="mjZ-sH-Ttg"/>
+                        <constraint firstItem="HSN-zL-h9P" firstAttribute="height" secondItem="Jtn-OW-2ch" secondAttribute="height" multiplier="0.04" id="p4D-9i-Zj8"/>
+                        <constraint firstItem="7JB-1K-iwF" firstAttribute="centerX" secondItem="Jtn-OW-2ch" secondAttribute="centerX" id="q3P-em-ST3"/>
+                        <constraint firstItem="IPW-Tt-cuT" firstAttribute="width" secondItem="Jtn-OW-2ch" secondAttribute="width" multiplier="0.04" id="tzI-bK-g96"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jtn-OW-2ch" secondAttribute="bottom" id="5m4-e1-Fg9"/>
+                <constraint firstItem="Jtn-OW-2ch" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8vG-Fx-aVe"/>
+                <constraint firstItem="Jtn-OW-2ch" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9m3-Gn-Ux2"/>
+                <constraint firstAttribute="trailing" secondItem="Jtn-OW-2ch" secondAttribute="trailing" id="kPE-3H-v74"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="team_placeholder" width="48" height="48"/>
+    </resources>
 </document>

@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+
+struct Player {
+    
+    var playerName: String =  ""
+    var firstName: String?
+    var lastName: String?
+    
+    init() {
+        self.mocking()
+    }
+    
+    mutating func mocking(){
+        self.playerName = ["zsoltpete","egabor", "iujlaki", "csellelajos", "csgabor", "saca", "gismo", "jani"].sample()!
+        self.firstName = ["Zsolt","Gábor", "Imre", "Lajos", "Gábor", "Sándor", "György", "János"].sample()!
+        self.lastName = ["Pete","Eszenyi", "Ujlaki", "Cselle", "Csizmadia", "Csáki", "Szabó", "Hausenberg"].sample()!
+    }
+    
+}
