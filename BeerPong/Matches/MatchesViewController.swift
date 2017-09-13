@@ -7,29 +7,42 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
 class MatchesViewController: UIViewController {
 
+    let matches: Variable<[Match]> = Variable([Match(), Match(), Match(), Match(), Match(), Match(), Match()])
+    var matchesMasterView: MatchesMasterView?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.initMasterView()
+        self.initObservers()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func initMasterView(){
+        guard let masterView: MatchesMasterView = self.view as? MatchesMasterView else {
+            return
+        }
+        self.matchesMasterView = masterView
     }
     
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension MatchesViewController{
+
+    func initObservers(){
+        self.initBinding()
     }
-    */
-
+    
+    func initBinding(){
+        self.matches.asObservable().bind(to: self.matchesMasterView!.tableView.rx.items(cellIdentifier: Constants.Cells.MatchCell))(self.handleBinding).addDisposableTo(rx.disposeBag)
+    }
+    
+    func handleBinding(index: Int, model: Match, cell: MatchCell){
+        cell.bind(to: model)
+    }
+    
 }

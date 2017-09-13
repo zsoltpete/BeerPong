@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct Match {
+    
+    var firstTeam: Team = Team()
+    var secondTeam: Team = Team()
+    var result: MatchResult = MatchResult()
+}

@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
 class MatchCell: UITableViewCell {
 
+    var viewModel: MatchViewModel = MatchViewModel()
+    
+    @IBOutlet weak var secondTeamProfileImageView: ProfileImageView!
+    @IBOutlet weak var firstTeamProfileImageView: ProfileImageView!
+    @IBOutlet weak var matchResultLabel: UILabel!
+    @IBOutlet weak var firstTeamNameLabel: UILabel!
+    @IBOutlet weak var secondTeamNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.bindComponents()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func bindComponents(){
+        self.viewModel.firstTeamName.asObservable().bind(to: self.firstTeamNameLabel.rx.text).addDisposableTo(rx.disposeBag)
+        self.viewModel.secondTeamName.asObservable().bind(to: self.secondTeamNameLabel.rx.text).addDisposableTo(rx.disposeBag)
+        self.viewModel.matchResult.asObservable().bind(to: self.matchResultLabel.rx.text).addDisposableTo(rx.disposeBag)
+        self.viewModel.firstTeamImage.asObservable().bind(to: self.firstTeamProfileImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
+        self.viewModel.secondTeamImage.asObservable().bind(to: self.secondTeamProfileImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
     }
-
+    
+    func bind(to model: Match){
+        self.viewModel.model = model
+    }
+    
 }
