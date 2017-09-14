@@ -35,6 +35,7 @@ extension MatchesViewController{
 
     func initObservers(){
         self.initBinding()
+        self.initModelSelected()
     }
     
     func initBinding(){
@@ -44,6 +45,18 @@ extension MatchesViewController{
     func handleBinding(index: Int, model: Match, cell: MatchCell){
         cell.bind(to: model)
         cell.setIndex(index: index)
+    }
+    
+    func initModelSelected(){
+        self.matchesMasterView!.tableView.rx.modelSelected(Match.self).subscribe(onNext: self.handleModelSelected).addDisposableTo(rx.disposeBag)
+    }
+    
+    func handleModelSelected(match: Match){
+        guard let matchDetailsViewController: MatchDetailsViewController = self.storyboard!.instantiateViewController(withIdentifier: "MatchDetailsViewController") as? MatchDetailsViewController else {
+            return
+        }
+        matchDetailsViewController.match.value = match
+        self.navigationController?.pushViewController(matchDetailsViewController, animated: true)
     }
     
 }

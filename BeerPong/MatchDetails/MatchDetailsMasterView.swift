@@ -7,15 +7,12 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import NSObject_Rx
 
 class MatchDetailsMasterView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+    @IBOutlet weak var matchDetailsHeaderView: MatchDetailsHeaderView!
+    @IBOutlet weak var matchBackgroundImageView: UIImageView!
 }

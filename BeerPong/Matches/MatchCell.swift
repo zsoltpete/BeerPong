@@ -36,7 +36,7 @@ class MatchCell: UITableViewCell {
     
     func bind(to model: Match){
         self.initView()
-        self.rowAnimation()
+        self.inAlphaAnimation()
         self.viewModel.model = model
     }
     
