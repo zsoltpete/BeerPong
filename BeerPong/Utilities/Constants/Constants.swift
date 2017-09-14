@@ -21,6 +21,6 @@ struct Constants {
     }
     
     struct Times {
-        static let RowAnimation: Double = 0.4
+        static let AlphaAnimation: Double = 0.4
     }
 }
