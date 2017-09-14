@@ -17,6 +17,10 @@ struct Constants {
     struct Images {
         static let BlurredPlasticGlass: UIImage = UIImage(named: "blurred_plastic_glass")!              //#imageLiteral(resourceName: "blurred_plastic_glass")
         static let BlurredBeer: UIImage = UIImage(named: "blurred_beer")!                               //#imageLiteral(resourceName: "blurred_beer")
-        static let TeamPlaceholder: UIImage = UIImage(named: "team_placeholder")!           //#imageLiteral(resourceName: "team_placeholder")
+        static let TeamPlaceholder: UIImage = UIImage(named: "team_placeholder")!                       //#imageLiteral(resourceName: "team_placeholder")
+    }
+    
+    struct Times {
+        static let RowAnimation: Double = 0.4
     }
 }
