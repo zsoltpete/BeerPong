@@ -31,10 +31,29 @@ class MatchCell: UITableViewCell {
         self.viewModel.matchResult.asObservable().bind(to: self.matchResultLabel.rx.text).addDisposableTo(rx.disposeBag)
         self.viewModel.firstTeamImage.asObservable().bind(to: self.firstTeamProfileImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
         self.viewModel.secondTeamImage.asObservable().bind(to: self.secondTeamProfileImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
+        self.viewModel.primaryColor.asObservable().subscribe(onNext: self.handlePrimaryColor).addDisposableTo(rx.disposeBag)
     }
     
     func bind(to model: Match){
+        self.initView()
+        self.rowAnimation()
         self.viewModel.model = model
+    }
+    
+    func setIndex(index: Int){
+        self.viewModel.index = index
+    }
+    
+    func initView(){
+        self.alpha = 0.0
+    }
+    
+    func handlePrimaryColor(color: UIColor){
+        self.firstTeamNameLabel.textColor = color
+        self.secondTeamNameLabel.textColor = color
+        self.matchResultLabel.textColor = color
+        self.firstTeamProfileImageView.borderColor = color
+        self.secondTeamProfileImageView.borderColor = color
     }
     
 }

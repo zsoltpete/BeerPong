@@ -13,7 +13,7 @@ import NSObject_Rx
 
 class MatchesViewController: UIViewController {
 
-    let matches: Variable<[Match]> = Variable([Match(), Match(), Match(), Match(), Match(), Match(), Match()])
+    let matches: Variable<[Match]> = Variable([Match(), Match(), Match(), Match(), Match(), Match(), Match(),Match(), Match(), Match(), Match(), Match(), Match(), Match(),Match(), Match(), Match(), Match(), Match(), Match(), Match(),Match(), Match(), Match(), Match(), Match(), Match(), Match()])
     var matchesMasterView: MatchesMasterView?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,7 @@ extension MatchesViewController{
     
     func handleBinding(index: Int, model: Match, cell: MatchCell){
         cell.bind(to: model)
+        cell.setIndex(index: index)
     }
     
 }

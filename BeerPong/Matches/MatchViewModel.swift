@@ -33,6 +33,12 @@ class MatchViewModel: NSObject {
                     self?.secondTeamImage.value = maybeImage!
                 }
             }
+        }
+    }
+    
+    var index: Int = 0 {
+        didSet{
+            self.primaryColor.value = (index % 2 == 0) ? UIColor.lightBeer : UIColor.darkBeer
             
         }
     }
@@ -42,5 +48,6 @@ class MatchViewModel: NSObject {
     var matchResult: Variable<String> = Variable("")
     var firstTeamImage: Variable<UIImage> = Variable(Constants.Images.TeamPlaceholder)
     var secondTeamImage: Variable<UIImage> = Variable(Constants.Images.TeamPlaceholder)
+    var primaryColor: Variable<UIColor> = Variable(UIColor.lightBeer)
     
 }
