@@ -30,6 +30,8 @@
 		503D05C81F69B0DA004E3E3C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C71F69B0DA004E3E3C /* Player.swift */; };
 		503D05CA1F69B172004E3E3C /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05C91F69B172004E3E3C /* MatchResult.swift */; };
 		503D05CD1F69B3C6004E3E3C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D05CC1F69B3C6004E3E3C /* Theme.swift */; };
+		505B9E131F6B07350068D6D2 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E121F6B07350068D6D2 /* UIView+Animation.swift */; };
+		505B9E151F6B091B0068D6D2 /* UIColor+Hexa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E141F6B091B0068D6D2 /* UIColor+Hexa.swift */; };
 		8AC78BD08567E01759CF24EC /* Pods_BeerPongUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		503D05C71F69B0DA004E3E3C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		503D05C91F69B172004E3E3C /* MatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
 		503D05CC1F69B3C6004E3E3C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		505B9E121F6B07350068D6D2 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		505B9E141F6B091B0068D6D2 /* UIColor+Hexa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hexa.swift"; sourceTree = "<group>"; };
 		5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerPongUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E48140438D4F426DF57B705 /* Pods-BeerPong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong.debug.xcconfig"; sourceTree = "<group>"; };
 		B298BF68E1BAF506D8848FEC /* Pods-BeerPongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				50374ED91F69BA0400F2DC3B /* UIView+Shadow.swift */,
 				50374EDB1F69BE7E00F2DC3B /* Array+Sample.swift */,
+				505B9E121F6B07350068D6D2 /* UIView+Animation.swift */,
+				505B9E141F6B091B0068D6D2 /* UIColor+Hexa.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -587,9 +593,11 @@
 				50374EDE1F69C5E900F2DC3B /* Team.swift in Sources */,
 				503D05BD1F69AF53004E3E3C /* MatchViewModel.swift in Sources */,
 				503D05C41F69B075004E3E3C /* Match.swift in Sources */,
+				505B9E131F6B07350068D6D2 /* UIView+Animation.swift in Sources */,
 				50374EDA1F69BA0400F2DC3B /* UIView+Shadow.swift in Sources */,
 				503D05CD1F69B3C6004E3E3C /* Theme.swift in Sources */,
 				503D05CA1F69B172004E3E3C /* MatchResult.swift in Sources */,
+				505B9E151F6B091B0068D6D2 /* UIColor+Hexa.swift in Sources */,
 				50374EDC1F69BE7E00F2DC3B /* Array+Sample.swift in Sources */,
 				503D05BB1F69AF40004E3E3C /* MatchCell.swift in Sources */,
 				503D05C21F69B03B004E3E3C /* Constants.swift in Sources */,
