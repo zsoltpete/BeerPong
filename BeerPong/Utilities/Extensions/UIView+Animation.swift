@@ -11,9 +11,15 @@ import UIKit
 
 extension UIView {
     
-    func rowAnimation(){
-        UIView.animate(withDuration: Constants.Times.RowAnimation) {
+    func inAlphaAnimation(){
+        UIView.animate(withDuration: Constants.Times.AlphaAnimation) {
             self.alpha = 1.0
+        }
+    }
+    
+    func outAlphaAnimation(){
+        UIView.animate(withDuration: Constants.Times.AlphaAnimation) {
+            self.alpha = 0.0
         }
     }
     
