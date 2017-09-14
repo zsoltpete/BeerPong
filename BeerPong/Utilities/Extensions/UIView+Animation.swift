@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+extension UIView {
+    
+    func rowAnimation(){
+        UIView.animate(withDuration: Constants.Times.RowAnimation) {
+            self.alpha = 1.0
+        }
+    }
+    
+}
