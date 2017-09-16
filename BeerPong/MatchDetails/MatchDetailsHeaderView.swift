@@ -19,6 +19,11 @@ class MatchDetailsHeaderView: UIView {
     @IBOutlet weak var loserImageView: ProfileImageView!
     @IBOutlet weak var winnerNameLabel: UILabel!
     @IBOutlet weak var loserNameLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var goldenCupImageView: UIImageView!
+    @IBOutlet weak var goldenCupContainerView: UIView!
+    @IBOutlet weak var timeContainerView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +35,9 @@ class MatchDetailsHeaderView: UIView {
         self.viewModel.loserName.asObservable().bind(to: self.loserNameLabel.rx.text).addDisposableTo(rx.disposeBag)
         self.viewModel.winnerImage.asObservable().bind(to: self.winnerImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
         self.viewModel.loserImage.asObservable().bind(to: self.loserImageView.imageView.rx.image).addDisposableTo(rx.disposeBag)
+        self.viewModel.isGoldenCup.asObservable().bind(to: self.goldenCupContainerView.rx.isHidden).addDisposableTo(rx.disposeBag)
+        self.viewModel.time.asObservable().bind(to: self.timeLabel.rx.text).addDisposableTo(rx.disposeBag)
+        self.viewModel.matchResult.asObservable().bind(to: self.resultLabel.rx.text).addDisposableTo(rx.disposeBag)
     }
     
     func bind(to model: Match){
