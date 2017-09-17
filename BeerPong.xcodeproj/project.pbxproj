@@ -37,6 +37,8 @@
 		505B9E1C1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E1B1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift */; };
 		505B9E1E1F6B17D90068D6D2 /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E1D1F6B17D90068D6D2 /* MatchDetailsViewModel.swift */; };
 		507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */; };
+		507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */; };
+		507EAD0F1F6F0060006A0AFF /* ProfileMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */; };
 		8AC78BD08567E01759CF24EC /* Pods_BeerPongUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		505B9E1B1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsHeaderView.swift; sourceTree = "<group>"; };
 		505B9E1D1F6B17D90068D6D2 /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
 		507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadable.swift; sourceTree = "<group>"; };
+		507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMasterView.swift; sourceTree = "<group>"; };
 		5911C4B577AD6DA7293EF322 /* Pods_BeerPongUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerPongUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E48140438D4F426DF57B705 /* Pods-BeerPong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPong.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong.debug.xcconfig"; sourceTree = "<group>"; };
 		B298BF68E1BAF506D8848FEC /* Pods-BeerPongUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerPongUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerPongUITests/Pods-BeerPongUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 		503D05841F69A8A6004E3E3C /* BeerPong */ = {
 			isa = PBXGroup;
 			children = (
+				507EAD0B1F6EFCBC006A0AFF /* Profile */,
 				505B9E161F6B10E30068D6D2 /* MatchDetails */,
 				503D05B31F69ADA1004E3E3C /* Matches */,
 				503D05BF1F69AFED004E3E3C /* Utilities */,
@@ -283,6 +288,15 @@
 				507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		507EAD0B1F6EFCBC006A0AFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */,
+				507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		8E36B19FDE356AB1DBECC126 /* Pods */ = {
@@ -621,6 +635,7 @@
 			files = (
 				503D05B51F69AEF5004E3E3C /* MatchesViewController.swift in Sources */,
 				503D05B91F69AF25004E3E3C /* MatchesTableView.swift in Sources */,
+				507EAD0F1F6F0060006A0AFF /* ProfileMasterView.swift in Sources */,
 				50374EDE1F69C5E900F2DC3B /* Team.swift in Sources */,
 				503D05BD1F69AF53004E3E3C /* MatchViewModel.swift in Sources */,
 				503D05C41F69B075004E3E3C /* Match.swift in Sources */,
@@ -634,6 +649,7 @@
 				503D05BB1F69AF40004E3E3C /* MatchCell.swift in Sources */,
 				505B9E1A1F6B16C70068D6D2 /* MatchDetailsMasterView.swift in Sources */,
 				503D05C21F69B03B004E3E3C /* Constants.swift in Sources */,
+				507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */,
 				505B9E1C1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift in Sources */,
 				503D05B71F69AF09004E3E3C /* MatchesMasterView.swift in Sources */,
 				507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */,
