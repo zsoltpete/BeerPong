@@ -7,7 +7,18 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import NSObject_Rx
 
 class UserSearchResultViewModel: NSObject {
+    
+    var model: Player = Player(){
+        didSet {
+            self.name.value = model.playerName
+        }
+    }
+    
+    var name: Variable<String> = Variable("")
 
 }

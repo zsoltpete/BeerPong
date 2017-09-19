@@ -7,29 +7,52 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import NSObject_Rx
 
 class UserSearchResultViewController: UIViewController {
-
+    
+    var userSearchResultMasterView: UserSearchResultMasterView?
+    var players: Variable<[Player]> = Variable([])
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.initMasterView()
+        self.initObservers()
+        self.getPlayers()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func initMasterView(){
+        guard let masterView: UserSearchResultMasterView = self.view as? UserSearchResultMasterView else {
+            return
+        }
+        self.userSearchResultMasterView = masterView
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension UserSearchResultViewController {
+    
+    func getPlayers(){
+        DataProviderService.shared.getPlayers().subscribe(onNext: { [weak self] players in
+            self?.players.value = players
+        }).addDisposableTo(rx.disposeBag)
     }
-    */
+    
+}
 
+extension UserSearchResultViewController {
+    
+    func initObservers(){
+        self.initBinding()
+    }
+    
+    func initBinding(){
+        self.players.asObservable().bind(to: self.userSearchResultMasterView!.tableView.rx.items(cellIdentifier: Constants.Cells.UserSearchResultCell))(self.handleBinding).addDisposableTo(rx.disposeBag)
+    }
+    
+    func handleBinding(index: Int, model: Player, cell: UserSearchResultCell){
+        cell.bind(to: model)
+    }
+    
 }

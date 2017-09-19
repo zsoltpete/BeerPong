@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import NSObject_Rx
 
 class UserSearchResultCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    var viewModel: UserSearchResultViewModel = UserSearchResultViewModel()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.bindComponents()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func bindComponents(){
+        self.viewModel.name.asObservable().bind(to: self.nameLabel.rx.text).addDisposableTo(rx.disposeBag)
+    }
+    
+    func bind(to model: Player){
+        self.viewModel.model = model
     }
 
 }
