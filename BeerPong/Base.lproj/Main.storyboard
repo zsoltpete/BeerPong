@@ -24,14 +24,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurred_beer" translatesAutoresizingMaskIntoConstraints="NO" id="Tx4-dH-Mjd">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9Xo-DW-RBo" customClass="MatchesTableView" customModule="BeerPong" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MatchCell" id="Ge6-u5-gSi" customClass="MatchCell" customModule="BeerPong" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ge6-u5-gSi" id="YOq-ou-Nkx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -399,9 +399,6 @@
                             <constraint firstItem="zKQ-zl-xao" firstAttribute="width" secondItem="9ia-Pd-lCZ" secondAttribute="width" multiplier="0.6" id="aeZ-qb-8Ii"/>
                             <constraint firstItem="zKQ-zl-xao" firstAttribute="centerY" secondItem="9ia-Pd-lCZ" secondAttribute="centerY" id="f4i-oI-5IG"/>
                         </constraints>
-                        <connections>
-                            <outlet property="circularSlider" destination="zKQ-zl-xao" id="N22-kM-zb0"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="u82-L1-mmN"/>
                 </viewController>
