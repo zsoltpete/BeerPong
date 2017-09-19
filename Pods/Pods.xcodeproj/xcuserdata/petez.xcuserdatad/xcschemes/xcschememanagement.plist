@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NSObject+Rx.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pageboy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -25,6 +40,11 @@
 			<false/>
 		</dict>
 		<key>Pods-BeerPongUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PureLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,20 +79,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Tabman.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>leveldb-library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>080D541584D16CCA8849B7859CDD7309</key>
+		<key>06C4FDD4C54A3F276A8EF638C78706C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0845373A989DF27823B637C2508F6E46</key>
+		<key>107A9565F9DF88517DFD3E28C05B2B96</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1001A6808E2CE2A36E37B67468ADEF4C</key>
+		<key>24A7CCDA14AFC0945F84A713F0F3DE67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>266AE1506DAD13D34C0725E909C0C476</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5465FFC45F6FBC4A48DAE47FAA0AAA9C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E9F230C66A92D8460767D01B362FF34</key>
+		<key>420569CF269723CE7CE4A3D6860ABD65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +142,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>880BFDDAC754C729B42468813DC25FB5</key>
+		<key>985979E439C5A6C4879A2EA356BCAF2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC5F8B06D57552E7ABE504E25FF8B21C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1A536D32A3AB205243F6F605B3B5BCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D37E4BD598E29E75E7E4A1EDD86309C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E0CFFD30526DFF7DD8FB2C990080D278</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4DD95323C54A78F879DAB0F1508B8E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F01447CE3B0C351F10FE491E9AE576D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2AB0A149EB6A8FED3F3AC16FF2F8DE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
