@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+
+
+private let _shared = FirebaseDataProvider()
+
+protocol DataProviderProtocol {
+    
+    func getPlayers() -> Observable<[Player]>
+    
+}
+
+
+class DataProviderService {
+    class var shared: DataProviderProtocol { return _shared }
+}
