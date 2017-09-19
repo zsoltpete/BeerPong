@@ -40,6 +40,13 @@
 		506480C91F71920900B60D18 /* DataProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480C81F71920900B60D18 /* DataProviderService.swift */; };
 		506480CB1F71923100B60D18 /* FireBaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */; };
 		506480CD1F7197DC00B60D18 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480CC1F7197DC00B60D18 /* BaseModel.swift */; };
+		506480D01F71A7CE00B60D18 /* UserSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480CF1F71A7CE00B60D18 /* UserSearchResultViewController.swift */; };
+		506480D21F71A7F200B60D18 /* UserSearchResultMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480D11F71A7F200B60D18 /* UserSearchResultMasterView.swift */; };
+		506480D41F71A81000B60D18 /* UserSearchResultTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480D31F71A81000B60D18 /* UserSearchResultTableView.swift */; };
+		506480D61F71A85600B60D18 /* UserSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480D51F71A85600B60D18 /* UserSearchResultCell.swift */; };
+		506480D81F71A87200B60D18 /* UserSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480D71F71A87200B60D18 /* UserSearchResultViewModel.swift */; };
+		506480DB1F71A98D00B60D18 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480DA1F71A98D00B60D18 /* SearchViewController.swift */; };
+		506480DD1F71A9BD00B60D18 /* SearchMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480DC1F71A9BD00B60D18 /* SearchMasterView.swift */; };
 		507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */; };
 		507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */; };
 		507EAD0F1F6F0060006A0AFF /* ProfileMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */; };
@@ -103,6 +110,13 @@
 		506480C81F71920900B60D18 /* DataProviderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderService.swift; sourceTree = "<group>"; };
 		506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseDataProvider.swift; sourceTree = "<group>"; };
 		506480CC1F7197DC00B60D18 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		506480CF1F71A7CE00B60D18 /* UserSearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultViewController.swift; sourceTree = "<group>"; };
+		506480D11F71A7F200B60D18 /* UserSearchResultMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultMasterView.swift; sourceTree = "<group>"; };
+		506480D31F71A81000B60D18 /* UserSearchResultTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultTableView.swift; sourceTree = "<group>"; };
+		506480D51F71A85600B60D18 /* UserSearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultCell.swift; sourceTree = "<group>"; };
+		506480D71F71A87200B60D18 /* UserSearchResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultViewModel.swift; sourceTree = "<group>"; };
+		506480DA1F71A98D00B60D18 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		506480DC1F71A9BD00B60D18 /* SearchMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMasterView.swift; sourceTree = "<group>"; };
 		507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadable.swift; sourceTree = "<group>"; };
 		507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMasterView.swift; sourceTree = "<group>"; };
@@ -188,6 +202,8 @@
 		503D05841F69A8A6004E3E3C /* BeerPong */ = {
 			isa = PBXGroup;
 			children = (
+				506480D91F71A94F00B60D18 /* Search */,
+				506480CE1F71A78B00B60D18 /* UserSearchResult */,
 				507EAD0B1F6EFCBC006A0AFF /* Profile */,
 				505B9E161F6B10E30068D6D2 /* MatchDetails */,
 				503D05B31F69ADA1004E3E3C /* Matches */,
@@ -300,6 +316,27 @@
 				506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		506480CE1F71A78B00B60D18 /* UserSearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				506480CF1F71A7CE00B60D18 /* UserSearchResultViewController.swift */,
+				506480D11F71A7F200B60D18 /* UserSearchResultMasterView.swift */,
+				506480D31F71A81000B60D18 /* UserSearchResultTableView.swift */,
+				506480D51F71A85600B60D18 /* UserSearchResultCell.swift */,
+				506480D71F71A87200B60D18 /* UserSearchResultViewModel.swift */,
+			);
+			path = UserSearchResult;
+			sourceTree = "<group>";
+		};
+		506480D91F71A94F00B60D18 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				506480DA1F71A98D00B60D18 /* SearchViewController.swift */,
+				506480DC1F71A9BD00B60D18 /* SearchMasterView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		507EAD081F6DB85F006A0AFF /* Protocols */ = {
@@ -680,8 +717,10 @@
 				503D05CD1F69B3C6004E3E3C /* Theme.swift in Sources */,
 				503D05CA1F69B172004E3E3C /* MatchResult.swift in Sources */,
 				505B9E151F6B091B0068D6D2 /* UIColor+Hexa.swift in Sources */,
+				506480DB1F71A98D00B60D18 /* SearchViewController.swift in Sources */,
 				50374EDC1F69BE7E00F2DC3B /* Array+Sample.swift in Sources */,
 				503D05BB1F69AF40004E3E3C /* MatchCell.swift in Sources */,
+				506480D01F71A7CE00B60D18 /* UserSearchResultViewController.swift in Sources */,
 				505B9E1A1F6B16C70068D6D2 /* MatchDetailsMasterView.swift in Sources */,
 				503D05C21F69B03B004E3E3C /* Constants.swift in Sources */,
 				507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */,
@@ -689,11 +728,16 @@
 				506480CD1F7197DC00B60D18 /* BaseModel.swift in Sources */,
 				506480C91F71920900B60D18 /* DataProviderService.swift in Sources */,
 				506480CB1F71923100B60D18 /* FireBaseDataProvider.swift in Sources */,
+				506480D61F71A85600B60D18 /* UserSearchResultCell.swift in Sources */,
 				503D05B71F69AF09004E3E3C /* MatchesMasterView.swift in Sources */,
 				507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */,
 				505B9E181F6B16AB0068D6D2 /* MatchDetailsViewController.swift in Sources */,
+				506480D81F71A87200B60D18 /* UserSearchResultViewModel.swift in Sources */,
+				506480D41F71A81000B60D18 /* UserSearchResultTableView.swift in Sources */,
+				506480D21F71A7F200B60D18 /* UserSearchResultMasterView.swift in Sources */,
 				50374EE31F69C8F300F2DC3B /* ProfileImageView.swift in Sources */,
 				503D05C81F69B0DA004E3E3C /* Player.swift in Sources */,
+				506480DD1F71A9BD00B60D18 /* SearchMasterView.swift in Sources */,
 				503D05861F69A8A6004E3E3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
