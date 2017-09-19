@@ -36,6 +36,10 @@
 		505B9E1A1F6B16C70068D6D2 /* MatchDetailsMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E191F6B16C70068D6D2 /* MatchDetailsMasterView.swift */; };
 		505B9E1C1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E1B1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift */; };
 		505B9E1E1F6B17D90068D6D2 /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B9E1D1F6B17D90068D6D2 /* MatchDetailsViewModel.swift */; };
+		506480C61F718F0700B60D18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 506480C51F718F0700B60D18 /* GoogleService-Info.plist */; };
+		506480C91F71920900B60D18 /* DataProviderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480C81F71920900B60D18 /* DataProviderService.swift */; };
+		506480CB1F71923100B60D18 /* FireBaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */; };
+		506480CD1F7197DC00B60D18 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506480CC1F7197DC00B60D18 /* BaseModel.swift */; };
 		507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */; };
 		507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */; };
 		507EAD0F1F6F0060006A0AFF /* ProfileMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */; };
@@ -95,6 +99,10 @@
 		505B9E191F6B16C70068D6D2 /* MatchDetailsMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsMasterView.swift; sourceTree = "<group>"; };
 		505B9E1B1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsHeaderView.swift; sourceTree = "<group>"; };
 		505B9E1D1F6B17D90068D6D2 /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
+		506480C51F718F0700B60D18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		506480C81F71920900B60D18 /* DataProviderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderService.swift; sourceTree = "<group>"; };
+		506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseDataProvider.swift; sourceTree = "<group>"; };
+		506480CC1F7197DC00B60D18 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		507EAD091F6DB8B3006A0AFF /* ImageDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadable.swift; sourceTree = "<group>"; };
 		507EAD0C1F6F004F006A0AFF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		507EAD0E1F6F0060006A0AFF /* ProfileMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMasterView.swift; sourceTree = "<group>"; };
@@ -191,6 +199,7 @@
 				503D058C1F69A8A6004E3E3C /* Assets.xcassets */,
 				503D058E1F69A8A6004E3E3C /* LaunchScreen.storyboard */,
 				503D05911F69A8A6004E3E3C /* Info.plist */,
+				506480C51F718F0700B60D18 /* GoogleService-Info.plist */,
 			);
 			path = BeerPong;
 			sourceTree = "<group>";
@@ -229,6 +238,7 @@
 		503D05BF1F69AFED004E3E3C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				506480C71F7191E100B60D18 /* Network */,
 				50374ED81F69B9DD00F2DC3B /* Extensions */,
 				503D05CB1F69B3AA004E3E3C /* Theme */,
 				503D05C01F69B001004E3E3C /* Constants */,
@@ -259,6 +269,7 @@
 				503D05C71F69B0DA004E3E3C /* Player.swift */,
 				503D05C91F69B172004E3E3C /* MatchResult.swift */,
 				50374EDD1F69C5E900F2DC3B /* Team.swift */,
+				506480CC1F7197DC00B60D18 /* BaseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +291,15 @@
 				505B9E1D1F6B17D90068D6D2 /* MatchDetailsViewModel.swift */,
 			);
 			path = MatchDetails;
+			sourceTree = "<group>";
+		};
+		506480C71F7191E100B60D18 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				506480C81F71920900B60D18 /* DataProviderService.swift */,
+				506480CA1F71923100B60D18 /* FireBaseDataProvider.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		507EAD081F6DB85F006A0AFF /* Protocols */ = {
@@ -443,6 +463,7 @@
 			files = (
 				50374EE11F69C86200F2DC3B /* ProfileImageView.xib in Resources */,
 				503D05901F69A8A6004E3E3C /* LaunchScreen.storyboard in Resources */,
+				506480C61F718F0700B60D18 /* GoogleService-Info.plist in Resources */,
 				503D058D1F69A8A6004E3E3C /* Assets.xcassets in Resources */,
 				503D058B1F69A8A6004E3E3C /* Main.storyboard in Resources */,
 			);
@@ -473,24 +494,38 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeerPong/Pods-BeerPong-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
+				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tabman.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -651,6 +686,9 @@
 				503D05C21F69B03B004E3E3C /* Constants.swift in Sources */,
 				507EAD0D1F6F004F006A0AFF /* ProfileViewController.swift in Sources */,
 				505B9E1C1F6B16DD0068D6D2 /* MatchDetailsHeaderView.swift in Sources */,
+				506480CD1F7197DC00B60D18 /* BaseModel.swift in Sources */,
+				506480C91F71920900B60D18 /* DataProviderService.swift in Sources */,
+				506480CB1F71923100B60D18 /* FireBaseDataProvider.swift in Sources */,
 				503D05B71F69AF09004E3E3C /* MatchesMasterView.swift in Sources */,
 				507EAD0A1F6DB8B3006A0AFF /* ImageDownloadable.swift in Sources */,
 				505B9E181F6B16AB0068D6D2 /* MatchDetailsViewController.swift in Sources */,
