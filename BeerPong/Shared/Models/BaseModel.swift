@@ -9,5 +9,18 @@
 import UIKit
 
 class BaseModel: NSObject {
-
+    var referenceId: String = ""
+    
+    override init() {
+        super.init()
+    }
+    
+    init(referenceId: String){
+        self.referenceId = referenceId
+    }
+    
+    init(snapshot: [String: AnyObject], for referenceId: String) {
+        self.referenceId = referenceId
+        
+    }
 }
