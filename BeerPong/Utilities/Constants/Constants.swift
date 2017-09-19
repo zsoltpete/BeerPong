@@ -12,6 +12,7 @@ import UIKit
 struct Constants {
     struct Cells {
         static let MatchCell = "MatchCell"
+        static let UserSearchResultCell = "UserSearchResultCell"
     }
     
     struct Images {
